@@ -2,7 +2,7 @@
 
 A clean and modern front-end website showcasing various sectors of EdTech using a landing page + smooth scrolling section design.
 
-![Preview](./preview.png)
+![Preview](EdTech%20Sectors/preview.png)
 
 ---
 
