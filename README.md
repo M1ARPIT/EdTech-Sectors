@@ -40,4 +40,8 @@ A clean and modern front-end website showcasing various sectors of EdTech using 
 ---
 
 ## 📁 Folder Structure
-
+EdTech Sectors/
+├── index.html
+├── styles.css
+├── script.js
+├── preview.png 
