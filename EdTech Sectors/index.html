@@ -1,89 +1,275 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EdTech Sectors</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore innovative EdTech solutions for education and professional growth.">
+  <title>EdTech Solutions</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- ✅ Sticky Navbar - OUTSIDE Hero -->
-  <div class="navbar">
-    <div class="logo">EdTech</div>
-    <div class="menu-toggle" id="menuToggle">&#9776;</div>
-  </div>
+  <header class="site-header">
+    <div class="navbar">
+      <div class="container">
+        <div class="logo">EdTech</div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false">☰</button>
+        <ul class="dropdown" id="dropdownMenu">
+          <li><a href="#school">School Education (K–12)</a></li>
+          <li><a href="#college">College/University Education</a></li>
+          <li><a href="#corporate">Corporate Training</a></li>
+          <li><a href="#skills">Skill Development</a></li>
+          <li><a href="#exam">Competitive Exam Prep</a></li>
+          <li><a href="#language">Language Learning</a></li>
+          <li><a href="#tutoring">Online Tutoring</a></li>
+          <li><a href="#special">Special Education</a></li>
+          <li><a href="#test">Test Series & Mock Platforms</a></li>
+          <li><a href="#teachers">EdTech for Teachers</a></li>
+        </ul>
+      </div>
+    </div>
 
-  <!-- ✅ Dropdown Menu outside hero too -->
-  <ul class="dropdown" id="dropdownMenu">
-    <li><a href="#school">School Education (K-12)</a></li>
-    <li><a href="#college">College/University Education</a></li>
-    <li><a href="#corporate">Corporate Training</a></li>
-    <li><a href="#skills">Skill Development</a></li>
-    <li><a href="#exam">Competitive Exam Prep</a></li>
-    <li><a href="#language">Language Learning</a></li>
-    <li><a href="#tutoring">Online Tutoring</a></li>
-    <li><a href="#special">Special Education</a></li>
-    <li><a href="#test">Test Series & Mock Platforms</a></li>
-    <li><a href="#teachers">EdTech for Teachers</a></li>
-  </ul>
-
-  <!-- ✅ Hero Section Below Navbar -->
-  <header class="hero">
-    <h1 class="title"><span class="typewriter">Exploring EdTech Sectors</span></h1>
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="title"><span class="typewriter">Exploring EdTech Sectors</span></h1>
+        <p class="subtitle">Discover innovative solutions transforming education and professional growth.</p>
+      </div>
+    </section>
   </header>
 
-  <!-- ✅ Sector Sections -->
   <main>
-    <section id="school" class="sector">
-      <h2>📘 School Education (K-12)</h2>
-      <p>Interactive platforms for smart classrooms, digital assignments, and gamified learning.</p>
+    <section id="school" class="sector-section">
+      <div class="sector-container">
+        <div class="sector-image">
+          <img src="https://img.freepik.com/free-vector/online-tutor-concept-illustration_114360-7471.jpg" alt="School Education (K–12)" />
+        </div>
+        <div class="sector-text">
+          <h2>📚 School Education (K–12)</h2>
+          <p>
+            The K–12 EdTech sector is transforming classrooms with cutting-edge tools like interactive smart boards, AI-driven analytics, and personalized learning platforms. These innovations create dynamic, engaging, and inclusive learning environments for students.
+          </p>
+          <p>
+            Leading platforms like <strong>BYJU’S</strong>, <strong>Vedantu</strong>, and <strong>Toppr</strong> deliver gamified lessons and interactive modules, making complex concepts accessible and fun. Features like live doubt-solving sessions and adaptive assessments keep students motivated and on track.
+          </p>
+          <p>
+            Parents benefit too, with real-time insights into their child’s progress, attendance, and performance, fostering a collaborative and transparent academic ecosystem.
+          </p>
+          <button class="cta-button" data-section="school" aria-label="Explore School Education Solutions">Explore EdTech Solutions</button>
+        </div>
+      </div>
     </section>
 
-    <section id="college" class="sector">
-      <h2>🎓 College/University Education</h2>
-      <p>Virtual labs, LMS platforms, and remote learning tools for higher education.</p>
+    <section id="college" class="sector-section">
+      <div class="sector-container">
+        <div class="sector-image">
+          <img src="https://img.freepik.com/free-vector/online-education-concept_23-2148533386.jpg" alt="College/University Education" />
+        </div>
+        <div class="sector-text">
+          <h2>🎓 College/University Education</h2>
+          <p>
+            The higher education EdTech sector is redefining learning with virtual labs, advanced Learning Management Systems (LMS), and seamless remote learning tools. These platforms empower students with flexible, interactive, and accessible education.
+          </p>
+          <p>
+            Top solutions like <strong>Coursera</strong>, <strong>edX</strong>, and <strong>Blackboard</strong> provide immersive virtual labs, real-time collaboration tools, and AI-driven course recommendations. These features enhance engagement and cater to diverse learning needs.
+          </p>
+          <p>
+            Faculty and students benefit from streamlined course management, progress tracking, and interactive content, fostering a connected and efficient academic experience.
+          </p>
+          <button class="cta-button" data-section="college" aria-label="Discover College Education Solutions">Discover Higher Ed Solutions</button>
+        </div>
+      </div>
     </section>
 
-    <section id="corporate" class="sector">
-      <h2>🏢 Corporate Training</h2>
-      <p>Enterprise learning systems, onboarding platforms, and soft skill development tools.</p>
+    <section id="corporate" class="sector-section">
+      <div class="sector-container">
+        <div class="sector-image">
+          <img src="https://img.freepik.com/free-vector/business-training-concept-illustration_114360-7924.jpg" alt="Corporate Training" />
+        </div>
+        <div class="sector-text">
+          <h2>🏢 Corporate Training</h2>
+          <p>
+            Corporate EdTech solutions streamline employee development with enterprise learning systems, onboarding platforms, and soft skill development tools. These platforms enhance workforce skills and productivity.
+          </p>
+          <p>
+            Tools like <strong>LinkedIn Learning</strong>, <strong>Udemy for Business</strong>, and <strong>TalentLMS</strong> offer tailored courses, progress tracking, and interactive modules to support professional growth and team collaboration.
+          </p>
+          <button class="cta-button" data-section="corporate" aria-label="Explore Corporate Training Solutions">Explore Corporate Solutions</button>
+        </div>
+      </div>
     </section>
 
-    <section id="skills" class="sector">
-      <h2>💻 Skill Development</h2>
-      <p>Hands-on platforms like coding bootcamps, design courses, and job-oriented upskilling.</p>
+    <section id="skills" class="sector-section">
+      <div class="sector-container">
+        <div class="sector-image">
+          <img src="https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg" alt="Skill Development" />
+        </div>
+        <div class="sector-text">
+          <h2>💻 Skill Development</h2>
+          <p>
+            Skill development platforms like coding bootcamps, design courses, and job-oriented upskilling programs empower learners to acquire in-demand skills for today’s job market.
+          </p>
+          <p>
+            Providers such as <strong>Codecademy</strong>, <strong>Skillshare</strong>, and <strong>Pluralsight</strong> offer hands-on learning experiences with practical projects and career-focused training.
+          </p>
+          <button class="cta-button" data-section="skills" aria-label="Start Skill Development">Start Upskilling Now</button>
+        </div>
+      </div>
     </section>
 
-    <section id="exam" class="sector">
-      <h2>📝 Competitive Exam Prep</h2>
-      <p>NEET, UPSC, JEE preparation tools with practice tests, video classes, and mock series.</p>
+    <section id="exam" class="sector-section">
+      <div class="sector-container">
+        <div class="sector-image">
+          <img src="https://img.freepik.com/free-vector/exam-preparation-concept-illustration_114360-7799.jpg" alt="Competitive Exam Prep" />
+        </div>
+        <div class="sector-text">
+          <h2>📝 Competitive Exam Prep</h2>
+          <p>
+            Competitive exam prep tools for exams like NEET, UPSC, and JEE provide practice tests, video classes, and mock series to help students excel in high-stakes tests.
+          </p>
+          <p>
+            Platforms like <strong>Unacademy</strong>, <strong>Testbook</strong>, and <strong>Gradeup</strong> offer personalized study plans and performance analytics to boost preparation.
+          </p>
+          <button class="cta-button" data-section="exam" aria-label="Prepare for Competitive Exams">Prepare for Success</button>
+        </div>
+      </div>
     </section>
 
-    <section id="language" class="sector">
-      <h2>🗣️ Language Learning</h2>
-      <p>Apps and platforms for learning foreign and regional languages using gamified tools.</p>
+    <section id="language" class="sector-section">
+      <div class="sector-container">
+        <div class="sector-image">
+          <img src="https://img.freepik.com/free-vector/language-learning-concept-illustration_114360-6186.jpg" alt="Language Learning" />
+        </div>
+        <div class="sector-text">
+          <h2>🗣️ Language Learning</h2>
+          <p>
+            Language learning apps and platforms use gamified tools to teach foreign and regional languages, making fluency accessible and engaging.
+          </p>
+          <p>
+            Apps like <strong>Duolingo</strong>, <strong>Rosetta Stone</strong>, and <strong>Babbel</strong> offer interactive lessons and speech recognition to enhance language skills.
+          </p>
+          <button class="cta-button" data-section="language" aria-label="Learn a New Language">Learn a New Language</button>
+        </div>
+      </div>
     </section>
 
-    <section id="tutoring" class="sector">
-      <h2>🎥 Online Tutoring</h2>
-      <p>Live 1-on-1 or group tutoring platforms with scheduling, chat, and performance tracking.</p>
+    <section id="tutoring" class="sector-section">
+      <div class="sector-container">
+        <div class="sector-image">
+          <img src="https://img.freepik.com/free-vector/online-tutoring-concept-illustration_114360-8227.jpg" alt="Online Tutoring" />
+        </div>
+        <div class="sector-text">
+          <h2>🎥 Online Tutoring</h2>
+          <p>
+            Online tutoring platforms offer live 1-on-1 or group sessions with scheduling, chat, and performance tracking for personalized learning.
+          </p>
+          <p>
+            Services like <strong>Chegg Tutors</strong>, <strong>Tutor.com</strong>, and <strong>Wyzant</strong> connect students with expert tutors for tailored academic support.
+          </p>
+          <button class="cta-button" data-section="tutoring" aria-label="Find an Online Tutor">Find a Tutor</button>
+        </div>
+      </div>
     </section>
 
-    <section id="special" class="sector">
-      <h2>♿ Special Education</h2>
-      <p>Customized learning aids for differently abled students using assistive tech.</p>
+    <section id="special" class="sector-section">
+      <div class="sector-container">
+        <div class="sector-image">
+          <img src="https://img.freepik.com/free-vector/inclusive-education-concept-illustration_114360-8793.jpg" alt="Special Education" />
+        </div>
+        <div class="sector-text">
+          <h2>♿ Special Education</h2>
+          <p>
+            Special education platforms provide customized learning aids using assistive technology to support differently abled students.
+          </p>
+          <p>
+            Tools like <strong>Bookshare</strong>, <strong>Ghotit</strong>, and <strong>Learning Ally</strong> offer accessible content and adaptive interfaces for inclusive learning.
+          </p>
+          <button class="cta-button" data-section="special" aria-label="Explore Special Education Tools">Explore Inclusive Tools</button>
+        </div>
+      </div>
     </section>
 
-    <section id="test" class="sector">
-      <h2>📊 Test Series & Mock Platforms</h2>
-      <p>Mock exams and analytics dashboards to simulate real exam environments.</p>
+    <section id="test" class="sector-section">
+      <div class="sector-container">
+        <div class="sector-image">
+          <img src="https://img.freepik.com/free-vector/online-certification-concept-illustration_114360-7975.jpg" alt="Test Series & Mock Platforms" />
+        </div>
+        <div class="sector-text">
+          <h2>📊 Test Series & Mock Platforms</h2>
+          <p>
+            Test series and mock platforms simulate real exam environments with practice tests and analytics dashboards to track performance.
+          </p>
+          <p>
+            Platforms like <strong>Embibe</strong>, <strong>Adda247</strong>, and <strong>Oliveboard</strong> provide detailed feedback and exam strategies for success.
+          </p>
+          <button class="cta-button" data-section="test" aria-label="Practice with Mock Tests">Practice Now</button>
+        </div>
+      </div>
     </section>
 
-    <section id="teachers" class="sector">
-      <h2>👩‍🏫 EdTech for Teachers</h2>
-      <p>Tools for lesson planning, student engagement, attendance, and performance tracking.</p>
+    <section id="teachers" class="sector-section">
+      <div class="sector-container">
+        <div class="sector-image">
+          <img src="https://img.freepik.com/free-vector/teacher-concept-illustration_114360-7677.jpg" alt="EdTech for Teachers" />
+        </div>
+        <div class="sector-text">
+          <h2>👩‍🏫 EdTech for Teachers</h2>
+          <p>
+            EdTech tools for teachers streamline lesson planning, student engagement, attendance tracking, and performance monitoring.
+          </p>
+          <p>
+            Platforms like <strong>Google Classroom</strong>, <strong>ClassDojo</strong>, and <strong>Kahoot</strong> enhance classroom management and interactive teaching.
+          </p>
+          <button class="cta-button" data-section="teachers" aria-label="Empower Your Teaching">Empower Your Teaching</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-form" class="form-section">
+      <div class="form-container">
+        <h2>📬 Get in Touch</h2>
+        <p>Interested in EdTech solutions? Fill out the form below to connect with us!</p>
+        <form id="edtech-form" action="#">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true">
+          </div>
+          <div class="form-group">
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Your Mobile Number" pattern="[0-9]{10}" required aria-required="true">
+          </div>
+          <div class="form-group">
+            <label for="sector">Interested Sector</label>
+            <select id="sector" name="sector" required aria-required="true">
+              <option value="" disabled selected>Select a Sector</option>
+              <option value="school">School Education (K–12)</option>
+              <option value="college">College/University Education</option>
+              <option value="corporate">Corporate Training</option>
+              <option value="skills">Skill Development</option>
+              <option value="exam">Competitive Exam Prep</option>
+              <option value="language">Language Learning</option>
+              <option value="tutoring">Online Tutoring</option>
+              <option value="special">Special Education</option>
+              <option value="test">Test Series & Mock Platforms</option>
+              <option value="teachers">EdTech for Teachers</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required aria-required="true"></textarea>
+          </div>
+          <button type="submit" class="form-submit-button" aria-label="Submit Contact Form">Submit</button>
+        </form>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <p>© 2025 EdTech Solutions. All rights reserved.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
